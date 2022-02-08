@@ -9,13 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           repository: ${{ github.repository }}
           ref: ${{github.ref}}
           path: '' #  Relative path under $GITHUB_WORKSPACE to place the repository
-      - name: Run a multi-line script
+      - name: Echo commands
         run: |
           echo '::echo::on'
           ls ${{ github.workspace }}
