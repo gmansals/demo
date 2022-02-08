@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}
+          ref: ${{github.ref}}
+          path: '' #  Relative path under $GITHUB_WORKSPACE to place the repository
+      - name: Run a multi-line script
+        run: |
+          echo '::echo::on'
+          ls ${{ github.workspace }}
