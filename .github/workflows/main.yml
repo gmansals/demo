@@ -1,4 +1,4 @@
-name: CI
+name: Echo commands
 on:
   push:
     branches: [ main ]
