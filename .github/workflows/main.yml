@@ -17,10 +17,4 @@ jobs:
         method: 'GET'
         contentType: 'application/json'
         customHeaders: 'x-api-key: D0S8mtYW.G4iDmPaJSDqPTEDd2AqHDiuwl9VXk0OMEsbiKZo8SC7S1DzcvJWMhMH6zttYgmlxDAUSSGrY1tNGJIWj0S32rfCScYHARDm6BXWht3k8PS4RbaaIfMwhCQwqLZ4x2Ayt'
-        data: '{
-          "ado_id": "f83df39f-f029-4158-abf6-deef43dc63c2",
-          "application_id": "0acb6c4f-efcd-4f14-953d-6fd7e34c16e8",
-          "start_time": "2022-02-15T14:48:09.858Z",
-          "end_time": "2022-02-15T14:48:09.858Z",
-          "status": "success",
-          "meta": "" }' # request body
+        data: '{"ado_id":"f83df39f-f029-4158-abf6-deef43dc63c2","application_id":"0acb6c4f-efcd-4f14-953d-6fd7e34c16e8","start_time":"2022-02-15T14:48:09.858Z","end_time":"2022-02-15T14:48:09.858Z","status":"success","meta":""}' # request body
