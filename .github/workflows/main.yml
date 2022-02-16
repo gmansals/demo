@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Update Deployment Metrics
+    - name: Make HTTP call
       id: postNewDeploymentRecord
       uses: fjogeleit/http-request-action@master
       with:
@@ -17,3 +17,5 @@ jobs:
         method: 'GET'
         contentType: 'application/json'
         data: '{"ado_id":"f83df39f-f029-4158-abf6-deef43dc63c2","application_id":"0acb6c4f-efcd-4f14-953d-6fd7e34c16e8","start_time":"2022-02-15T14:48:09.858Z","end_time":"2022-02-15T14:48:09.858Z","status":"success","meta":""}' # request body
+    - name: Show Response
+      run: echo ${{ steps.postNewDeploymentRecord.outputs.response }}
