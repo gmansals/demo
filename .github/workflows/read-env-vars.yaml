@@ -8,6 +8,6 @@ jobs:
     steps:
     - name: Test env var read
       run: |
-        echo "REPO-NAME=$(echo ${{ github.repository }}" | awk -F / '{print $2}' | sed -e "s/:refs//")
+        echo "REPO-NAME=$(echo ${{ github.repository }} | awk -F / '{print $2}' | sed -e "s/:refs//")"
         echo "${{ github.repository_owner }}"
         echo "${{ env.REPO-NAME }}"
