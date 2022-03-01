@@ -1,4 +1,4 @@
-name: Echo commands
+name: Make HTTP request
 on:
 #  push:
 #    branches: [ main ]
