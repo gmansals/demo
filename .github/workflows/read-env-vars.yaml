@@ -2,11 +2,8 @@ name: Read env vars
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
 jobs:
-  http-request:
+  read-env-vars:
     runs-on: ubuntu-latest
     steps:
     - name: Test env var read
